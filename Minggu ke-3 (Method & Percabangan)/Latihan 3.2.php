@@ -1,15 +1,37 @@
 <?php
-$x = 5;
-$x *= 6;
 
-echo $x;
-?>
+class Kendaraan
+{
+    var $jumlahRoda;
+    var $warna;
+    var $bahanBakar;
+    var $harga;
+    var $merek;
 
-<?php
-$x = 15;
-$x %= 6;
+    function statusHarga()
+    {
+        if ($this->harga > 50000000) {
+            $status = 'Mahal';
+        } else {
+            $status = 'Murah';
+        }
+        return $status;
+    }
 
-echo $x;
-?>
+    function setMerek($x)
+    {
+        $this->merek = $x;
+    }
 
+    function setHarga($x)
+    {
+        $this->harga = $x;
+    }
+}
+
+$kendaraan1 = new Kendaraan();
+$kendaraan1->setMerek('Yamaha MIO');
+$kendaraan1->setHarga(10000000);
+
+echo "Status: " . $kendaraan1->statusHarga();
 

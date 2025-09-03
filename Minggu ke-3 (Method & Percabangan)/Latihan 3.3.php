@@ -1,30 +1,40 @@
 <?php
-$x = 5;
-$y = 10;
 
-var_dump($x != $y);
+// Akses properties dengan setter & getter
+class Kendaraan
+{
+    var $jumlahRoda;
+    var $warna;
+    var $bahanBakar;
+    var $harga;
+    var $merek;
+    var $tahunPembuatan;
+
+    function setMerek($x)
+    {
+        $this->merek = $x;
+    }
+
+    function getMerek()
+    {
+        return $this->merek;
+    }
+
+    function setHarga($y)
+    {
+        $this->harga = $y;
+    }
+
+    function getHarga()
+    {
+        return $this->harga;
+    }
+}
+
+$kendaraan1 = new Kendaraan();
+$kendaraan1->setMerek('Yamaha Mio');
+$kendaraan1->setHarga(10000000);
+
+echo $kendaraan1->getMerek();
 echo "<br>";
-
-$x = 10;
-$y = 10;
-
-var_dump($x !== $y);
-echo "<br>";
-
-$x = 16;
-$y = 10;
-
-var_dump($x == $y);
-echo "<br>";
-
-$x = 6;
-$y = 6;
-
-var_dump($x === $y);
-echo "<br>";
-
-$x = 15;
-$y = 10;
-
-echo ($x <=> $y);
-?>
+echo $kendaraan1->getHarga();

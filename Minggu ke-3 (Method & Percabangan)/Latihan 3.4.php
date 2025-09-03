@@ -1,29 +1,26 @@
 <?php
-$x = 100;
-$y = 50;
+$nilai = 88;
 
-if ($x >= 100 and $y == 50) {
-    echo "Hello world and!";
+if ($nilai > 90) {
+    $grade = "A+";
+} elseif ($nilai > 80) {
+    $grade = "A";
+} elseif ($nilai > 70) {
+    $grade = "B+";
+} elseif ($nilai > 60) {
+    $grade = "B";
+} elseif ($nilai > 50) {
+    $grade = "C+";
+} elseif ($nilai > 40) {
+    $grade = "C";
+} elseif ($nilai > 30) {
+    $grade = "D";
+} elseif ($nilai > 20) {
+    $grade = "E";
+} else {
+    $grade = "F";
 }
-echo "<br>";
 
-if ($x == 100 or $y == 80) {
-    echo "Hello world or!";
-}
-echo "<br>";
-
-if ($x == 100 && $y <= 50) {
-    echo "Hello world! &&";
-}
-echo "<br>";
-
-if ($x == 100 || $y == 80) {
-    echo "Hello world! ||";
-}
-echo "<br>";
-
-if ($x != 100) {
-    echo "Hello world! not";
-}
-echo "<br>";
+echo "Nilai anda: $nilai<br>";
+echo "Grade: $grade";
 ?>
