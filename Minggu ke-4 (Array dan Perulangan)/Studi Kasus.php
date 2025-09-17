@@ -48,7 +48,7 @@ class BangunRuang {
 // Data array input
 $input = [
     ["Bola", 0, 7, 0],
-    ["Kerucut", 0, 7, 10],
+    ["Kerucut", 0, 14, 10],
     ["Limas Segi Empat", 8, 0, 24],
     ["Kubus", 30, 0, 0],
     ["Tabung", 0, 7, 10],
@@ -65,7 +65,7 @@ foreach ($input as $row) {
     $data[] = $obj;
 }
 
-// Output tabel
+// front end
 echo "<table border='1' cellpadding='5' cellspacing='0' style='border-collapse: collapse; width: 60%; margin: auto;'>";
 echo "<tr style='background-color: #0652fe; color: white; text-align: center;'>
         <th>Jenis Bangun Ruang</th>
