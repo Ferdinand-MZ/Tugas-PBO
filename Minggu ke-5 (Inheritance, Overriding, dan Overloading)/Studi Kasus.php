@@ -12,7 +12,7 @@ class Employee {
     }
 
     public function hitungGaji() {
-        return $this->gaji; // default tidak ada bonus
+        return $this->gaji;
     }
 
     public function getInfo() {
@@ -68,10 +68,10 @@ class PegawaiMingguan extends Employee {
 
 // Uji Coba
 $prog = new Programmer("Budi", 5000000, 12);
-echo $prog->getInfo() . PHP_EOL;
+echo $prog->getInfo() . "<br/>";
 
 $dir = new Direktur("Andi", 10000000, 5);
-echo $dir->getInfo() . PHP_EOL;
+echo $dir->getInfo() . "<br/>";
 
 $peg = new PegawaiMingguan("Siti", 3000000, 2, 100000, 100, 80);
-echo $peg->getInfo() . PHP_EOL;
+echo $peg->getInfo(). "<br/>";
